@@ -42,6 +42,5 @@ jobs:
         with:
           context: .
           push: ${{ github.ref == 'refs/heads/master' }}
-          platforms: all
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
