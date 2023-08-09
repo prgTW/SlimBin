@@ -8,10 +8,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  buildPush:
+  build_and_push:
     runs-on: ubuntu-latest
 
-    name: ${{ matrix.repository }}:${{ matrix.tag }}
+    name: Build images and push to Docker Hub
     steps:
       - uses: actions/checkout@v3
 
